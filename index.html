@@ -5,16 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 </head>
 <body>
-    <div class="caixa">
-        <h1>login</h1>
-        <input type="text" placeholder="email" id="email">
-        <br>
-        <input type="password" placeholder="senha" id="senha">
-        <br>
-        <input type="submit" class="botao" onclick="logar()">
-    </div>
+    <main>
+        <form class="caixa">
+            <h1>login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="email" id="email">
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="senha" id="senha">
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="esqueci">
+                <label>
+                    <input type="checkbox">
+                    Lembrar minha senha
+                </label>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+            <input type="submit" class="botao" onclick="logar()">
+            <div class="registro">
+                <p>Não tem conta?<a href="#"> Cadastre-se</a></p>
+            </div>
+        </form>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
